@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/index.css">
+    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="Styles/intro.css">
+    <title>3x + 1</title>
+</head>
+<body>
+    <div class="intro">
+        <div class="introbox">
+            <h1 class="intronames">
+                <span class="text t1">Collatz conjecture</span>
+            </h1>
+            <h1 class="intronames">
+                <span class="text t2">Ulam conjecture</span>
+            </h1>
+            <h1 class="intronames">
+                <span class="text t3">Kakutani's problem</span>
+            </h1>
+            <h1 class="intronames">
+                <span class="text t4">Thwaites conjecture</span>
+            </h1>
+            <h1 class="intronames">
+                <span class="text t5">Hasse's algorithm</span>
+            </h1>
+            <h1 class="intronames">
+                <span class="text t6">Syracuse problem</span>
+            </h1>
+            <h1 class="intronames">
+                <span class="text t7">Hailstone sequence</span>
+            </h1> 
+            <h1 class="intronames">
+                <span class="text t8">Wondrous numbers</span>
+            </h1>
+        </div>
+        <div class="introhead">3x + 1</div>
+    </div>
+
+    <div class="app">
+        <div class="header">
+            <div class="headin">
+                <div class="headlabel">Enter a number: </div>
+                <input type="text" id="number" class="headinput">
+                <button class="headsubbut" onclick="collatz()"></button>
+            </div>
+            <div class="headgap"></div>
+            <div id="headinfo">
+                <div id="headques">What is Collatz conjecture?</div>
+                <div id="headhover">
+                    Take a number n. <br>
+                    if (number is even) { n = n/2 } <br>
+                    if (number is odd) { n = 3*n + 1 } <br> <br>
+                    Every number eventually reaches a loop of 4, 2, 1.
+                </div>
+            </div>
+        </div>
+        <div class="gap"></div>
+        <div id="plotbox"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src='https://cdn.plot.ly/plotly-2.4.2.min.js'></script>
+    <script src="index.js"></script>
+</body>
+</html>
